@@ -1625,7 +1625,7 @@ span.megafone {
   /* line 1246, ../sass/header.scss */
   .submenu ul {
     float: left;
-    width: 11%;
+    width: 15%;
     height: 100%;
     margin-right: 10px !important;
   }
@@ -1680,13 +1680,14 @@ span.megafone {
 
   /* line 1291, ../sass/header.scss */
   .menu .submenu ul:nth-child(5) {
-    margin: 0px 15px;
+    margin: 0px 25px;
     width: 13%;
   }
 
   /* line 1296, ../sass/header.scss */
   .menu .submenu ul:nth-child(6) {
-    margin: 0px 28px;
+    margin: 0px 6px;
+    width: 20% !important;
   }
 
   /* line 1299, ../sass/header.scss */
@@ -1701,7 +1702,7 @@ span.megafone {
 
   /* line 1307, ../sass/header.scss */
   .submenu .prateleira-categoria ul li {
-    height: 315px !important;
+    height: 340px !important;
   }
 
   /* line 1310, ../sass/header.scss */
@@ -3545,7 +3546,7 @@ section.marcas-full {
   text-transform: uppercase;
   color: #a4a4a4;
   font-weight: bold;
-  padding: 20px 0px 40px 0px;
+  padding: 20px 0px 20px 0px;
   font-family: "Myriad Pro";
 }
 
@@ -5242,7 +5243,7 @@ a.thickbox {
 
 /* line 538, ../sass/categoria.scss */
 .menu .submenu ul {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0px auto;
 }
 
@@ -5955,7 +5956,7 @@ a.r-tabs-anchor {
 
 /* line 22, ../sass/produto.scss */
 .r-tabs .r-tabs-tab {
-  padding: 0px 10px 5px 10px;
+  padding: 0px 35px 5px 35px;
 }
 
 /* line 25, ../sass/produto.scss */
@@ -6386,18 +6387,18 @@ p.preco-a-vista {
 /* line 286, ../sass/produto.scss */
 .comprar a {
   background: #ff9700;
-  width: 155px !important;
+  width: 164px !important;
   text-align: center;
   float: left;
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px 27px 4px 27px;
+  padding: 6px 37px 5px 27px;
   font-size: 23px;
   border-radius: 19px;
   box-sizing: border-box;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 /* line 301, ../sass/produto.scss */
@@ -7391,7 +7392,6 @@ div#TB_closeAjaxWindow {
 /* line 1034, ../sass/produto.scss */
 span.group_0 {
   float: left;
-  margin-left: 42px;
 }
 
 /* line 1039, ../sass/produto.scss */
@@ -7402,10 +7402,7 @@ li.select.skuList.item-dimension-Cor {
 
 /* line 1044, ../sass/produto.scss */
 span.group_0::before {
-  content: "COR : ";
-  position: absolute;
-  margin-left: -39px;
-  margin-top: 1px;
+  content: "";
 }
 
 /* line 1046, ../sass/produto.scss */
@@ -7810,7 +7807,7 @@ span.group_1::before {
   td.equal {
     display: block;
     float: left;
-    margin-top: 79px;
+    margin-top: 112px;
     padding-right: 0px;
   }
 
@@ -7824,7 +7821,7 @@ span.group_1::before {
     color: #969696;
     width: 28%;
     float: left;
-    margin-top: 45px;
+    margin-top: 72px;
     margin-left: 25px;
   }
 }
