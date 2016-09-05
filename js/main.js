@@ -213,7 +213,27 @@ $('document').ready(function(){
 		shippingContainer();
 
 			//carrossel da pagina de produto
-			$('li.helperComplement').remove();				
+			$('li.helperComplement').remove();
+
+		// Alterando Para foto o item Cor
+		$('body').append('<div class="variations" style="display:none"/>');
+			vtexjs.catalog.getCurrentProductWithVariations().done(function(product){
+			    var obj = product.skus;
+			    var variacao = obj.length;
+			    
+			    $.each(obj, function(ind, obj){
+			        var img = product.skus[ind].image;
+			        var cor = product.skus[ind].dimensions["Cor"];
+			        $('.variations').append('<img src="'+img+'" cor="'+cor+'" />');
+			    });
+			});
+
+			$('.item-dimension-Cor span label').each(function(){
+			    var txt = $(this).text();
+			    var el = $('.variations').find('img[cor="'+txt+'"]:eq(0)').attr('src');
+			    $(this).css("background-image","url("+el+")");
+			});		
+					
 	};
 
 	largMobile = $('body').width();
