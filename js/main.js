@@ -214,7 +214,7 @@ $('document').ready(function(){
 
 			//carrossel da pagina de produto
 			$('li.helperComplement').remove();
-
+		$('.item-dimension-Cor').prepend("<h3>COR :</h3>");
 		// Alterando Para foto o item Cor
 		$('body').append('<div class="variations" style="display:none"/>');
 			vtexjs.catalog.getCurrentProductWithVariations().done(function(product){
@@ -233,7 +233,7 @@ $('document').ready(function(){
 			    var el = $('.variations').find('img[cor="'+txt+'"]:eq(0)').attr('src');
 			    $(this).css("background-image","url("+el+")");
 			});		
-					
+
 	};
 
 	largMobile = $('body').width();

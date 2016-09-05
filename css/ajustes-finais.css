@@ -45,3 +45,6 @@ fieldset.refino.even.cor label {
 li.item-dimension-Cor input {
     display: none;
 }
+.item-dimension-Cor h3 {
+    margin-bottom: 10px;
+}
