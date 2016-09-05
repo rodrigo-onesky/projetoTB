@@ -3521,7 +3521,7 @@ section.marcas-full {
   display: inline-block;
   width: 105px;
   height: 61px;
-  margin: 0px 10px;
+  margin: 0px 1.6%;
   float: left;
 }
 
@@ -3536,7 +3536,7 @@ section.marcas-full {
 /* line 296, ../sass/home.scss */
 .conteudo-marcas-logo ul {
   padding: 15px 0px;
-  width: 1100px;
+  width: 100%;
   text-align: center;
 }
 
@@ -3562,7 +3562,7 @@ section.marcas-full {
 
 /* line 317, ../sass/home.scss */
 a.vertodas {
-  width: 1200px;
+  width: 100%;
   display: block;
   margin: 0px auto;
   text-align: right;
@@ -3572,27 +3572,25 @@ a.vertodas {
   text-decoration: none;
   font-family: "Myriad Pro";
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 25px;
   float: left;
+  padding-right: 3%;
 }
 
 /* line 332, ../sass/home.scss */
 .conteudo-marcas-logo li:nth-child(1) {
   background: url("/arquivos/marcas.png") no-repeat -5px -32px;
   width: 98px;
-  margin: 0px 10px;
   height: 31px;
   display: inline-block;
   position: relative;
   top: 16px;
-  margin: 0px;
 }
 
 /* line 333, ../sass/home.scss */
 .conteudo-marcas-logo li:nth-child(2) {
   background: url("/arquivos/marcas.png") no-repeat -139px -16px;
   width: 66px;
-  margin: 0px 20px;
   height: 61px;
   display: inline-block;
 }
@@ -3601,7 +3599,6 @@ a.vertodas {
 .conteudo-marcas-logo li:nth-child(3) {
   background: url("/arquivos/marcas.png") no-repeat -242px -25px;
   width: 103px;
-  margin: 0px 10px;
   height: 40px;
   display: inline-block;
   position: relative;
@@ -3612,7 +3609,6 @@ a.vertodas {
 .conteudo-marcas-logo li:nth-child(4) {
   background: url("/arquivos/marcas.png") no-repeat -374px -19px;
   width: 86px;
-  margin: 0px 10px;
   height: 56px;
   display: inline-block;
   position: relative;
@@ -3623,7 +3619,6 @@ a.vertodas {
 .conteudo-marcas-logo li:nth-child(5) {
   background: url("/arquivos/marcas.png") no-repeat -483px -23px;
   width: 113px;
-  margin: 0px 10px;
   height: 51px;
   display: inline-block;
   position: relative;
@@ -3634,7 +3629,6 @@ a.vertodas {
 .conteudo-marcas-logo li:nth-child(6) {
   background: url("/arquivos/marcas.png") no-repeat -628px -19px;
   width: 69px;
-  margin: 0px 10px;
   height: 57px;
   display: inline-block;
   position: relative;
@@ -3645,7 +3639,6 @@ a.vertodas {
 .conteudo-marcas-logo li:nth-child(7) {
   background: url("/arquivos/marcas.png") no-repeat -735px -18px;
   width: 100px;
-  margin: 0px 10px;
   height: 58px;
   display: inline-block;
   position: relative;
@@ -3656,7 +3649,6 @@ a.vertodas {
 .conteudo-marcas-logo li:nth-child(8) {
   background: url("/arquivos/marcas.png") no-repeat -857px -29px;
   width: 101px;
-  margin: 0px 10px;
   height: 35px;
   display: inline-block;
   position: relative;
@@ -3667,11 +3659,10 @@ a.vertodas {
 .conteudo-marcas-logo li:nth-child(9) {
   background: url("/arquivos/marcas.png") no-repeat -982px -28px;
   width: 107px;
-  margin: 0px 10px;
   height: 42px;
   display: inline-block;
   position: relative;
-  top: 19px;
+  top: 24px;
 }
 
 /* line 343, ../sass/home.scss */
