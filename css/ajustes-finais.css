@@ -16,3 +16,32 @@
 	    width: 400px !important;
 	}
 }
+
+/* Desktop */
+
+.ajusta-submenu ul .prateleira-categoria ul {
+    padding: 0px !important;
+}
+
+/* Alterar somente na categoria queimadores */
+fieldset.refino.even.cor label {
+    font-size: 13px;
+}
+
+/* Página de Produtos */
+.item-dimension-Cor label {
+    display: block;
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 0px;
+    background-size: 100%;
+    float: left;
+    border: 1px solid #eee;
+    cursor: pointer;
+    border-radius:45px;
+    border: 2px solid #efefef;
+}
+
+li.item-dimension-Cor input {
+    display: none;
+}
