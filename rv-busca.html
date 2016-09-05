@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <vtex:template id="rv-scriptecss" />
+    <script src="arquivos/jquery.bxslider.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        var _trustvox_shelf_rate = _trustvox_shelf_rate || [];
+        _trustvox_shelf_rate.push(['_storeId', '7034']);
+        _trustvox_shelf_rate.push(['_productContainer', '.prateleira-categoria']);
+    </script>
+    <script type="text/javascript" async="true" src="//s3-sa-east-1.amazonaws.com/trustvox-rate-widget-js/widget.js"></script>
+    <style type="text/css">
+        .trustvox-widget-rating {text-align: center;}
+        .trustvox-widget-rating .ts-shelf-container {display: inline-block;}
+    </style>
+
+</head>
+<body>
+
+    <vtex:template id="rv-header" />
+    
+    <section class="breadcrumb">
+        <div class="crumb-b">
+            <vtex.cmc:searchTitle />
+            <vtex.cmc:breadCrumb />
+            <div class="ordenar"></div>
+        </div>
+    </section>
+    
+    <section class="conteudo-categorias">
+	    <section class="filtro">
+		    <vtex.cmc:searchNavigator/>
+		    <vtex.cmc:singleDepartmentNavigator/>
+	    </section>	
+	    <section class="produtos-exibe">
+		    <vtex.cmc:searchResult layout="3f0dae82-2ea4-45ab-af87-3a67aee38671" itemCount="24" columnCount="3" />
+	    </section>
+    </section>
+    
+    <vtex:template id="rv-footer" />
+</body>
+</html>
