@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+<title>Minha Conta</title>
+<vtex:metaTags/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<vtex:template id="pngIeFix" />
+<vtex:template id="gt-scriptecss" />
+<link href="/arquivos/gt-account.css?v=001" rel="stylesheet" type="text/css" media="all" />
+<script src="/arquivos/gt-account.js?v=001" type="text/javascript"></script>
+  <meta charset="UTF8"></meta>
+    <script type="text/javascript" src="/arquivos/main.js"></script>
+    <script type="text/javascript" src="/arquivos/portal-minicart-with-template.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/arquivos/rv-geral.css" />
+</head>
+<body>    
+  
+ <vtex:template id="rv-header" />
+    
+  <!-- content -->
+  <main id="gcontent" class="ext all-account">
+    <div class="int bg-white">
+
+      <!-- pitbar -->
+      <vtex:template id="gt-pitbar" />
+      <!-- pitbar -->
+
+      <section class="line header-client">
+        <h2><span>Minha conta</span></h2>
+        <h3>Olá! <span></span></h3>
+        <p>Durante toda a sua navegação, você estará em um ambiente virtual 100% seguro, garantimos os padrões rígidos
+de segurança e confidencialidade a fim de proteger suas informações.</p>
+      </section>
+
+      <section class="line edit-client">
+        <!-- dados -->
+        <div class="col33A client-dados">  
+          <h4>Meus dados</h4>        
+          <vtex.cmc:accountUserProfile />
+        </div>
+        <!-- dados -->
+
+        <!-- address -->
+        <div class="col33A client-address">
+          <h4>Meus endereços</h4>
+          <vtex.cmc:accountAddress />            
+        </div>
+        <!-- address -->
+
+        <!-- order -->
+        <div class="col33A client-order">
+          <h4>Meus pedidos</h4>
+          <p class="order-link"><a href="/account/orders">Ver meus pedidos</a></p>
+          <div class="txt-order">Clique no link acima para acompahar seus <br /> pedidos realizados</div>
+        </div>
+        <!-- order -->
+      </section>
+
+        
+    </div>      
+  </main>
+  <!-- content -->
+  <vtex:template id="rv-footer" />
+ 
+</body>
+</html>

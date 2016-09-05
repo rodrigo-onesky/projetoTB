@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <vtex:template id="rv-scriptecss" />
+</head>
+<body>
+    
+    <vtex:template id="rv-header" />
+    <section class="breadcrumb">
+        <div class="crumb-b">
+            <vtex.cmc:searchTitle />
+            <vtex.cmc:breadCrumb />
+        </div>
+    </section>
+    
+    <section class="conteudo-institucional">
+	    <section class="c-institucional">
+	    <div class="ajuda-foto"></div>
+	        <div class="menu-institucional">
+	            <h1 class='name-ajuda'> Ajuda </h1>
+	            <ul>
+	                <li>Fale Conosco <span></span></li>
+	                <li>Trocas e Devoluções <span></span></li>
+	                <li>Pedidos e Entregas <span></span></li>
+	                <li>Forma de Pagamento <span></span></li>
+	                <li>Política de Privacidade <span></span></li>
+	                <li>Loja <span></span></li>
+	                <li>Perguntas Frequentes <span></span></li>
+	            </ul>
+	        </div>
+	        <div class="acordiao">
+	            <vtex:contentPlaceHolder id="conteudo" />
+	        </div>
+		    
+	    </section>
+    </section>
+    
+    <vtex:template id="rv-footer" />
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+<head>
+  <title>Meus Pedidos</title>
+  <vtex:metaTags/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <vtex:template id="pngIeFix" />  
+  <link href="/arquivos/gt-account.css?v=001" rel="stylesheet" type="text/css" media="all" />
+  <script src="/arquivos/gt-account.js?v=001" type="text/javascript"></script>
+  <meta charset="UTF8"></meta>
+    <script type="text/javascript" src="/arquivos/main.js"></script>
+    <script type="text/javascript" src="/arquivos/portal-minicart-with-template.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/arquivos/rv-geral.css" />
+</head>
+<body>
+
+    <vtex:template id="rv-header" />
+    
+  <div id="gcontent" class="ext">
+    <div class="int bg-white">
+      <!-- pitbar -->
+      <vtex:template id="gt-pitbar" />
+      <!-- pitbar -->
+      
+      <section class="line header-client">
+          <h2><span>Meus Pedidos</span></h2>
+          <h3><span></span> pedidos realizados</h3>
+      </section>
+      <section class="line order-client">
+        <vtex.cmc:orderList/>
+      </section>
+    </div>
+  </div>
+
+    <vtex:template id="rv-footer" />
+
+</body>
+</html>
