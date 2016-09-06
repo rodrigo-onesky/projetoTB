@@ -172,5 +172,55 @@ li.item-dimension-Cor input {
         text-align: left !important;
         padding-left: 10%;
     }
+    .mobile-menu > ul > li::after {
+        content: ">";
+        color: #fff;
+        float: right;
+        margin-right: 10px;
+        font-family: tahoma;
+    }
+    .mobile-menu > ul > li.active::after {
+        content: "";
+    }
 
+}
+.conteudo-marcas-logo li:nth-child(1):hover {
+    background: url("/arquivos/logo_zouk_cinza_hover.png");
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+.conteudo-marcas-logo li:nth-child(2):hover {
+    background: url("/arquivos/logo_brmade_cinza_hover.png");
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+.conteudo-marcas-logo li:nth-child(3):hover {
+    background: url("/arquivos/logo_triton_cinza_hover.png");
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+.conteudo-marcas-logo li:nth-child(4):hover {
+    background: url("/arquivos/logo_regal_cinza_hover.png");
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+.conteudo-marcas-logo li:nth-child(5):hover {
+    background: url("/arquivos/logo_Khalil-Maamoon_cinza_hover.png");
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+.conteudo-marcas-logo li:nth-child(6):hover {
+    background: url("/arquivos/logo_joy_cinza_hover.png");
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+.conteudo-marcas-logo li:nth-child(7):hover {
+    background: url("/arquivos/logo_cocoking_cinza_hover.png");
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+.conteudo-marcas-logo li:nth-child(8):hover {
+    background: url("/arquivos/logo_brasuka_cinza_hover.png");
+    transition-duration: 1s;
+    transform: scale(1.1);
 }

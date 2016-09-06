@@ -1568,15 +1568,15 @@ span.megafone {
 
   /* line 1200, ../sass/header.scss */
   .mobile-menu li {
-    text-align: center;
-    padding: 12px 0px;
+    text-align: left;
+    padding: 12px 0px 12px 15px;
     border-top: 1px solid #08648e;
     border-bottom: 1px solid #08648e;
   }
 
   /* line 1207, ../sass/header.scss */
   .mobile-menu ul li a {
-    text-align: center;
+    text-align: left;
     width: 100%;
     text-transform: uppercase;
     text-decoration: none;
@@ -3519,11 +3519,11 @@ section.marcas-full {
 
 /* line 281, ../sass/home.scss */
 .conteudo-marcas-logo li {
-  display: inline-block;
-  width: 105px;
-  height: 61px;
-  margin: 0px 1.6%;
+  width: 91px;
+  height: 60px;
   float: left;
+  margin: 0px 2.8%;
+  transition-duration: 1s;
 }
 
 /* line 289, ../sass/home.scss */
@@ -3573,97 +3573,50 @@ a.vertodas {
   text-decoration: none;
   font-family: "Myriad Pro";
   box-sizing: border-box;
-  margin-top: 25px;
+  margin-top: 10px;
   float: left;
   padding-right: 3%;
 }
 
 /* line 332, ../sass/home.scss */
 .conteudo-marcas-logo li:nth-child(1) {
-  background: url("/arquivos/marcas.png") no-repeat -5px -32px;
-  width: 98px;
-  height: 31px;
-  display: inline-block;
-  position: relative;
-  top: 16px;
+  background: url("/arquivos/logo_zouk_cinza.png") no-repeat;
+  margin: 0px;
 }
 
 /* line 333, ../sass/home.scss */
 .conteudo-marcas-logo li:nth-child(2) {
-  background: url("/arquivos/marcas.png") no-repeat -139px -16px;
-  width: 66px;
-  height: 61px;
-  display: inline-block;
+  background: url("/arquivos/logo_brmade_cinza.png") no-repeat;
 }
 
 /* line 334, ../sass/home.scss */
 .conteudo-marcas-logo li:nth-child(3) {
-  background: url("/arquivos/marcas.png") no-repeat -242px -25px;
-  width: 103px;
-  height: 40px;
-  display: inline-block;
-  position: relative;
-  top: 8px;
+  background: url("/arquivos/logo_triton_cinza.png") no-repeat;
 }
 
 /* line 335, ../sass/home.scss */
 .conteudo-marcas-logo li:nth-child(4) {
-  background: url("/arquivos/marcas.png") no-repeat -374px -19px;
-  width: 86px;
-  height: 56px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
+  background: url("/arquivos/logo_regal_cinza.png") no-repeat;
 }
 
 /* line 336, ../sass/home.scss */
 .conteudo-marcas-logo li:nth-child(5) {
-  background: url("/arquivos/marcas.png") no-repeat -483px -23px;
-  width: 113px;
-  height: 51px;
-  display: inline-block;
-  position: relative;
-  top: 13px;
+  background: url("/arquivos/logo_Khalil-Maamoon_cinza.png") no-repeat;
 }
 
 /* line 337, ../sass/home.scss */
 .conteudo-marcas-logo li:nth-child(6) {
-  background: url("/arquivos/marcas.png") no-repeat -628px -19px;
-  width: 69px;
-  height: 57px;
-  display: inline-block;
-  position: relative;
-  top: 8px;
+  background: url("/arquivos/logo_joy_cinza.png") no-repeat;
 }
 
 /* line 338, ../sass/home.scss */
-.conteudo-marcas-logo li:nth-child(7) {
-  background: url("/arquivos/marcas.png") no-repeat -735px -18px;
-  width: 100px;
-  height: 58px;
-  display: inline-block;
-  position: relative;
-  top: 7px;
-}
+.conteudo-marcas-logo li:nth-child(7) {background: url("/arquivos/logo_cocoking_cinza.png");}
 
 /* line 339, ../sass/home.scss */
-.conteudo-marcas-logo li:nth-child(8) {
-  background: url("/arquivos/marcas.png") no-repeat -857px -29px;
-  width: 101px;
-  height: 35px;
-  display: inline-block;
-  position: relative;
-  top: 24px;
-}
+.conteudo-marcas-logo li:nth-child(8) {background: url("/arquivos/logo_brasuka_cinza.png");}
 
 /* line 340, ../sass/home.scss */
 .conteudo-marcas-logo li:nth-child(9) {
-  background: url("/arquivos/marcas.png") no-repeat -982px -28px;
-  width: 107px;
-  height: 42px;
-  display: inline-block;
-  position: relative;
-  top: 24px;
 }
 
 /* line 343, ../sass/home.scss */
