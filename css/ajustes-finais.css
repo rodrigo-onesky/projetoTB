@@ -48,3 +48,129 @@ li.item-dimension-Cor input {
 .item-dimension-Cor h3 {
     margin-bottom: 10px;
 }
+
+
+@media (min-width:925px){
+
+    input#cl_first_name {
+        margin: 0px !important;
+    }
+
+    input#cl_last_name {
+        margin: 0px !important;
+    }
+
+    input#cl_email {
+        margin: 0px !important;
+    }
+
+    fieldset div label {
+        display: inline-block;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    input#cl_home_phone {
+        margin: 0px !important;
+    }
+
+    span.col100.obr h4 {
+        display: none;
+    }
+
+    textarea#co_description {
+        margin-top: 10px;
+        height: 100px;
+    }
+
+    input#cl_phone {
+        margin: 0px !important;
+        width: 35%;
+    }
+
+    input#cl_email {
+        width: 75.5%;
+    }
+
+    input#cl_last_name {
+        width: 75.5%;
+    }
+
+    input#cl_first_name {
+        width: 75.5%;
+    }
+
+    span.col100 input {
+        height: 30px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+
+    input#commit {
+        width: 100px;
+        height: 30px;
+    }
+
+}
+
+@media (min-width: 319px) and (max-width: 451px){
+    .menu-institucional {
+        border: none !important;
+        width: 100% !important;
+    }
+
+    fieldset div label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .line input {
+        margin: 0px !important;
+        height: 30px;
+    }
+
+    input#cl_home_phone {
+        margin-bottom: 18px !important;
+        width: 100%;
+    }
+
+    form#co_form {
+        width: 100% !important;
+    }
+
+    .acordiao {
+        width: 100% !important;
+        border-top: 1px solid #ccc;
+    }
+
+    input#cl_first_name {
+        width: 100%;
+    }
+
+    input#cl_last_name {
+        width: 100%;
+    }
+
+    input#cl_email {
+        width: 100%;
+    }
+
+    input#cl_phone {
+        width: 100%;
+    }
+
+    textarea#co_description {
+        width: 100% !important;
+        height: 100px;
+    }
+
+    .conteudo-institucional span.col100.obr h4 {
+        display: none;
+    }
+
+    .menu-institucional ul li {
+        text-align: left !important;
+        padding-left: 10%;
+    }
+
+}
