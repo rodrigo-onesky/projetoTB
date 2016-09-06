@@ -414,6 +414,10 @@ $(window).load(function(){
 	$('fieldset.refino:eq(1)').addClass('cor');
 	$('a.search-navigator-tab.tab-refinar').insertAfter('.search-multiple-navigator fieldset:last-child');
 
+	if($("body.home").length > 0){
+		('.powered_by').remove();
+	}
+
 
 	/* Inserindo quadrado no Filtro de cores - Filtro */
         // $('fieldset.refino.cor label input').each(function(){

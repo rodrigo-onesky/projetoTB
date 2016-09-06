@@ -224,3 +224,19 @@ li.item-dimension-Cor input {
     transition-duration: 1s;
     transform: scale(1.1);
 }
+a.powered_by {
+    display: none !important;
+}
+.iframe-insta iframe.websta-widgets {
+    width: 100% !important;
+    border: none !important;
+    margin: 0px auto !important;
+    height: 100% !important;
+    padding: 0px !important;
+}
+.iframe-insta {
+    margin-top: 20px;
+}
+.powered_by {
+    display: none !important;
+}
