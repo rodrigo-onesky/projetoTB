@@ -110,6 +110,24 @@ li.item-dimension-Cor input {
         width: 100px;
         height: 30px;
     }
+    .powr-instagram-feed.powrLoaded {
+        max-width: 1225px;
+        margin: 0px auto;
+    }
+
+    .iframe-insta iframe {
+        border: none !important;
+        width: 100% !important;
+        margin: 0px auto;
+        height: 247px !important;
+        float: left;
+    }
+
+    .iframe-insta {
+        float: left;
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -182,6 +200,19 @@ li.item-dimension-Cor input {
     .mobile-menu > ul > li.active::after {
         content: "";
     }
+    .search-multiple-navigator {
+        text-align: left !important;
+        padding-left: 14%;
+    }
+    .mobile-menu > ul > li > .submenu > ul li > a {
+        font-size: 14px !important;
+    }
+    .mobile-menu li.active {
+        text-align: center;
+    }
+    .categoria-departamento .prateleira-categoria ul li {
+        height: 444px !important;
+    }
 
 }
 .conteudo-marcas-logo li:nth-child(1):hover {
@@ -239,4 +270,36 @@ a.powered_by {
 }
 .powered_by {
     display: none !important;
+}
+@media(min-width: 900px){
+    .search-multiple-navigator label {
+        width: 100% !important;
+    }
+}
+.categoria-departamento ul.productClusterSearchableIds .last a {
+    background: #ff1c21;
+    border-radius: 5px;
+    padding: 1px 5px;
+    color: #fff;
+}
+.busca-category ul.productClusterSearchableIds .last a {
+    background: #000;
+    border-radius: 5px;
+    padding: 1px 5px;
+    color: #fff;
+}
+ul.acessorios-cat li {
+    color: #086893;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+@media (min-width: 880px){
+    .preco-parcelado em.installment {
+        display: block !important;
+    }
+    .preco-parcelado{
+        display: block !important;
+    }
 }

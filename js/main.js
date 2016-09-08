@@ -409,15 +409,11 @@ $('document').ready(function(){
 //alterando a posição dos menus no fieldset
 $(window).load(function(){
 
+	$('<ul class="acessorios-cat"><li>Acessórios</li></ul>').insertBefore('ul.ruby');
 	$('.search-single-navigator').insertBefore('fieldset.refino-marca');
 	$('fieldset.refino:eq(2)').insertAfter('fieldset.refino:eq(0)');
 	$('fieldset.refino:eq(1)').addClass('cor');
 	$('a.search-navigator-tab.tab-refinar').insertAfter('.search-multiple-navigator fieldset:last-child');
-
-	if($("body.home").length > 0){
-		('.powered_by').remove();
-	}
-
 
 	/* Inserindo quadrado no Filtro de cores - Filtro */
         // $('fieldset.refino.cor label input').each(function(){
