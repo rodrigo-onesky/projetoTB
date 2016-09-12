@@ -1,8 +1,73 @@
 //Author : Rodrigo vitorelli dos Santos
 //E-mail: rodrigo-vitorelli@outlook.com
 
-//botão voltar ao topo
+var comprar_qtd_ajax = function(){
 
+	$('body').on('click', '.actionProduto .bt-comprar a', function(event){
+		var currentSKU = $(this);
+		var idSKU2 = $(this).attr('rel');
+		//"usar quando o ID do sku do controle de prateleira for o correto"
+		var idSKU = currentSKU.parent().parent().parent().find('.buy-button-asynchronous-defaultsku-id').attr('value');
+		var qtdSKU = $('#qtd_'+idSKU2).val();
+		var el_produto = $(this);
+	  	var preview = el_produto.parents('.prateleira-categoria li').html();
+		var htmlErrorBuyP = '<h2>Erro</h2><p class="errorBuy">Confira se selecionou um tamanho e tente comprar novamente</p><a class="close-modal">fechar janela</a>';
+		var htmlSucessBuyP = '<div class="previewProduto"><div class="botoes-preview"><div class="mensagem-rew"><span class="Mini-tick"></span><p>Item adicionado ao carrinho com <strong>sucesso</strong></p></div><div class="pr_prod">'+preview+'</div><a class="finalizar" href="/checkout/#/cart">Finalizar pedido</a><a class="close-modal">Continuar comprando</a></div></div>';
+		var xHeight  = $(document).height();
+
+		$('body').on('click', '.close-modal', function() {
+			$('.gt-ext-modal').remove();
+			$('.int-modal').remove();
+		});
+		if (qtdSKU > 0) {
+			var urlCart = '/checkout/cart/add?sku='+idSKU+'&qty='+qtdSKU+'&seller=1&sc=1&redirect=false';
+			//console.log(urlCart);
+			$(this).html('Aguarde...');
+			setTimeout(function(){
+				$.ajax({
+					url: urlCart,
+					type: 'GET',
+					success: function() {
+						currentSKU.parents('li').prepend('<div class="gt-ext-modal" style="height:'+xHeight+'px"></div><div class="int-modal jn-comprar">'+htmlSucessBuyP+'</div>');
+						currentSKU.html('&#10004; Produto adicionado');
+						var foto_Produto = $('.int-modal.jn-comprar').find('.imagem').html();
+						var nome_Produto = $('.int-modal.jn-comprar').find('.nome-produto a').html();
+
+						$('.int-modal.jn-comprar').html('<div class="pr_prod"><div class="img_prod">'+foto_Produto+'</div><div class="mensagem_sucesso"><span class="Mini-tick"></span><p>Item adicionado ao<br /> carrinho com <strong>sucesso</strong></p></div><div class="nome_prod">'+nome_Produto+'</div><div class="botoes"><a class="finalizar" href="/checkout/#/cart">Finalizar pedido</a><a class="close-modal">Continuar comprando</a></div></div>');
+						//atualiza o minicart
+						vtexjs.checkout.getOrderForm();
+					},
+					error: function() {
+						currentSKU.html('adicionar ao carrinho');
+						console.log('Erro: comprar prateleira');
+					}
+				});
+			});
+		} else {
+		   alert('Digite uma quantidade maior do que Zero');
+		}
+		event.preventDefault();
+	});
+
+	$(function() {
+		$('body').on('keydown', '.val-qtd-pt', function(e){-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||/65|67|86|88/.test(e.keyCode)&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()});
+	});
+};
+
+var comprar_prateleira = function() {
+
+	$('.tem-sku').each(function() {
+		if ($('a.btn-add-buy-button-asynchronous', this).length) {
+			var temSku  = $('a.btn-add-buy-button-asynchronous', this).attr('href');
+			var numTemSku = temSku.indexOf('seller');            
+			if (numTemSku > 0) {
+				$(this).parents('li').find('.bt-comprar').show();
+			} else {            	
+				$(this).parents('li').find('.bt-escolher').show();
+			}
+		}
+	});
+};
 
 //cria o botão ver mais e ocultar no filtro do menu
 var verMaisCatFiltro = function(){
@@ -182,6 +247,8 @@ $('document').ready(function(){
 	    setTimeout(function(){
 	    	verMaisCatFiltro();
 	    	menu_single();
+	    	comprar_prateleira();
+			comprar_qtd_ajax();
 	    }, 700);
 	};	
 
