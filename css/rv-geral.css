@@ -4626,7 +4626,7 @@ section.produtos-exibe {
 /* line 100, ../sass/categoria.scss */
 section.conteudo-categorias {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0px auto;
 }
 
@@ -4778,7 +4778,7 @@ ul.pages li.previous {
 
 /* line 215, ../sass/categoria.scss */
 .crumb-b {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0px auto;
   font-family: "Myriad Pro";
 }
@@ -4794,7 +4794,7 @@ h2.titulo-sessao {
   text-transform: uppercase;
   background: url(/arquivos/bread-crumb.png);
   background-repeat: no-repeat;
-  text-align: center;
+  text-align: left;
   width: 100px;
   background-position: 94px 0px;
 }
@@ -4829,6 +4829,7 @@ p.compare {
 /* line 253, ../sass/categoria.scss */
 .ordenar {
   float: right;
+  margin-right: 20px;
 }
 
 /* line 256, ../sass/categoria.scss */

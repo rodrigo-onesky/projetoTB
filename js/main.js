@@ -28,7 +28,7 @@ var comprar_qtd_ajax = function(){
 					url: urlCart,
 					type: 'GET',
 					success: function() {
-						currentSKU.parents('li').prepend('<div class="gt-ext-modal" style="height:'+xHeight+'px"></div><div class="int-modal jn-comprar">'+htmlSucessBuyP+'</div>');
+						$('body').prepend('<div class="gt-ext-modal" style="height:'+xHeight+'px"></div><div class="int-modal jn-comprar">'+htmlSucessBuyP+'</div>');
 						currentSKU.html('&#10004; Produto adicionado');
 						var foto_Produto = $('.int-modal.jn-comprar').find('.imagem').html();
 						var nome_Produto = $('.int-modal.jn-comprar').find('.nome-produto a').html();
@@ -252,6 +252,14 @@ $('document').ready(function(){
 	    }, 700);
 	};	
 
+	//executa as alterações para o filtro de menus
+	if($('body.home').length > 0){
+	    setTimeout(function(){
+	    	comprar_prateleira();
+			comprar_qtd_ajax();
+	    }, 700);
+	};
+
 	menuFlutuante();
 
 	if($("body.produtos-compra").length > 0){
@@ -470,6 +478,8 @@ $('document').ready(function(){
 	}
 
     $('em.valor-de.price-list-price').insertAfter(".especificacoes");
+
+    $(".search-multiple-navigator input[type='checkbox']").vtexSmartResearch();
 
 });//fim do ready
 

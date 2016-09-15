@@ -1,20 +1,20 @@
 /* IPHONE 5 */
 @media(min-width: 319px) and (max-width: 370px){
-	.prateleira-categoria ul li {
-	    width: 310px !important;
-	}
+    .prateleira-categoria ul li {
+        width: 310px !important;
+    }
 }
 /* IPHONE 6 */
 @media(min-width: 375px) and (max-width: 410px){
-	.prateleira-categoria ul li {
-	    width: 370px !important;
-	}
+    .prateleira-categoria ul li {
+        width: 370px !important;
+    }
 }
 /* IPHONE 6S */
 @media(min-width: 411px) and (max-width: 500px){
-	.prateleira-categoria ul li {
-	    width: 400px !important;
-	}
+    .prateleira-categoria ul li {
+        width: 400px !important;
+    }
 }
 
 /* Desktop */
@@ -266,7 +266,7 @@ a.powered_by {
     padding: 0px !important;
 }
 .iframe-insta {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .powered_by {
     display: none !important;
@@ -391,4 +391,24 @@ a.close-modal {
 a.finalizar::before {content: "";background: url('/arquivos/bandeira-tc.jpg');width: 20px;height: 20px;display: inline-block;padding-right: 10px;background-repeat: no-repeat;margin-top: 0px;position: relative;top: 1px;}
 .comprar-prateleira {
     margin-top: 22px;
+}
+.submenu .comprar-prateleira {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+}
+#editMe.design_2{
+    visibility: hidden;
+    display: none !important
+    opacity: 0;
+    fill: rgba(0,0,0,0.0001);
+}
+h1.nome-insta::after {
+    background: #fff;
+    content: "";
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    margin-top: 8px;
+    left: 0px;
 }
